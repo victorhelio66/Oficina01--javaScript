@@ -1,0 +1,101 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fonte e corpo da página */
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f4f6f8;
+  color: #333;
+  padding: 40px 20px;
+}
+
+/* Título principal */
+h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2rem;
+  color: #1a73e8;
+}
+
+/* Grade das questões */
+#grade {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Contêiner de cada questão */
+.conteiner {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Títulos das questões */
+.conteiner h2 {
+  margin-bottom: 10px;
+  color: #1a1a1a;
+}
+
+/* Parágrafos de instruções */
+.conteiner p {
+  margin-bottom: 10px;
+}
+
+/* Labels e inputs */
+label {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+input[type="number"],
+input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+/* Botão de envio */
+input[type="submit"],
+button {
+  background-color: #1a73e8;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-size: 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+  margin-top: 10px;
+}
+
+input[type="submit"]:hover,
+button:hover {
+  background-color: #0f5fd1;
+}
+
+/* Resultados */
+p[id^="resultado-"] {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #0a0a0a;
+}
+
+/* Cronômetro */
+#display {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #222;
+}
